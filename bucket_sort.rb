@@ -1,5 +1,5 @@
 
-# 1から100までの数のソート
+# 重複を許したソート。範囲も指定できる。
 def bucket_sort(array: nil, from: nil, to: nil)
   buckets = {}
   [*(from..to)].each{|number| buckets[number.to_s] = 0}
